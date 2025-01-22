@@ -1,13 +1,13 @@
 - name: Build Docker Image
   hosts: dockerservers
   gather_facts: false
-  remote_user: root  # Use jenkins user instead of root
+  remote_user: jenkins  # Changed from root to jenkins
   tasks:
     - name: Building Docker Image
       docker_image:
          name: omegalul:latest
          source: build
          build:
-            path: /var/lib/jenkins/workspace/omegalul/omegalul
+            path: ~/omegalul  # Updated to match the corrected folder structure
          state: present
          force_source: true
