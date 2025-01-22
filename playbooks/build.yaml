@@ -8,6 +8,6 @@
          name: omegalul:latest
          source: build
          build:
-            path: ~/omegalul
+            path: /var/lib/jenkins/workspace/omegalul
          state: present
          force_source: true
