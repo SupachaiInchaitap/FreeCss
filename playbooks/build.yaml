@@ -8,6 +8,6 @@
         name: team14:latest  # Docker image name
         source: build
         build:
-          path: ~/team14%402  # Path with @ replaced by %40
+          path: /var/lib/jenkins/workspace/team14@2  # Full path to the Jenkins workspace folder
         state: present
         force_source: true
