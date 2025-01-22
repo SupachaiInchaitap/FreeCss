@@ -5,9 +5,9 @@
   tasks:
     - name: Building Docker Image
       docker_image:
-         name: omegalul:latest #docker image name
+         name: omegalul:latest
          source: build
          build:
-            path: ~/omegalul #path ที่เก็บไฟล์ sourcecode 
+            path: /var/lib/jenkins/workspace/omegalul  # Adjust this path
          state: present
          force_source: true
