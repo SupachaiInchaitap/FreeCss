@@ -2,13 +2,12 @@
   hosts: dockerservers
   gather_facts: false
   remote_user: root
-  become: true  # This allows sudo execution
   tasks:
     - name: Building Docker Image
       docker_image:
-        name: team14:latest  # Docker image name
-        source: build
-        build:
-          path: /var/lib/jenkins/workspace/team14@2  # Full path to Jenkins workspace folder
-        state: present
-        force_source: true
+         name: omegalul:latest #docker image name
+         source: build
+         build:
+            path: ~/omegalul #path ที่เก็บไฟล์ sourcecode 
+         state: present
+         force_source: true
