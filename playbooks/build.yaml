@@ -1,7 +1,7 @@
 - name: Build Docker Image
   hosts: dockerservers
   gather_facts: false
-  remote_user: jenkins  # Changed from root to jenkins
+  remote_user: root  # Changed from root to jenkins
   tasks:
     - name: Building Docker Image
       docker_image:
