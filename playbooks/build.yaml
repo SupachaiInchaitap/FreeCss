@@ -5,9 +5,9 @@
   tasks:
     - name: Building Docker Image
       docker_image:
-         name: team14:latest #docker image name
-         source: build
-         build:
-            path: ~/team14@2 #path ที่เก็บไฟล์ sourcecode 
-         state: present
-         force_source: true
+        name: team14:latest  # Docker image name
+        source: build
+        build:
+          path: ~/team14%402  # Path with @ replaced by %40
+        state: present
+        force_source: true
