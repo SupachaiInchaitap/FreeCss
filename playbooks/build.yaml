@@ -8,6 +8,6 @@
          name: omegalul:latest
          source: build
          build:
-            path: ~/omegalul  # Updated to match the corrected folder structure
+            path: ~/66026190  # Updated to match the corrected folder structure
          state: present
          force_source: true
